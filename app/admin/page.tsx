@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { apiUrl } from "@/lib/api-url";
 
 interface Subscriber {
   id: number;
@@ -38,7 +39,7 @@ export default function AdminPage() {
     setError("");
 
     try {
-      const res = await fetch("/api/admin/subscribers", {
+      const res = await fetch(apiUrl("/api/admin/subscribers"), {
         headers: { Authorization: `Bearer ${pwd}` },
       });
 

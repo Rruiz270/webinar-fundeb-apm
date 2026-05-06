@@ -2,6 +2,7 @@
 
 import { useState, FormEvent } from "react";
 import { CARGO_OPTIONS } from "@/lib/validation";
+import { apiUrl } from "@/lib/api-url";
 
 interface FieldErrors {
   nome?: string[];
@@ -38,7 +39,7 @@ export default function SubscribeForm() {
     setLoading(true);
 
     try {
-      const res = await fetch("/api/subscribe", {
+      const res = await fetch(apiUrl("/api/subscribe"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
