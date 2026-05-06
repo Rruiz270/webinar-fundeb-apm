@@ -41,14 +41,19 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="flex items-center gap-3 justify-center lg:justify-start">
-              <img
-                src="/images/apm-logo-pill-web.png"
-                alt="APM"
-                className="h-8 w-auto opacity-70"
-              />
-              <span className="text-white/30 text-sm">em parceria com</span>
-              <span className="text-green font-bold text-sm">Instituto i10</span>
+            <div className="flex flex-col items-center lg:items-start gap-4 mt-2">
+              <div className="flex items-center gap-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-6 py-4">
+                <img
+                  src="/images/apm-logo-horizontal.png"
+                  alt="APM — Associação Paulista de Municípios"
+                  className="h-14 sm:h-16 w-auto"
+                />
+                <div className="w-px h-10 bg-white/30" />
+                <div className="flex flex-col">
+                  <span className="text-white/50 text-xs uppercase tracking-wider">em parceria com</span>
+                  <span className="text-green font-extrabold text-lg">Instituto i10</span>
+                </div>
+              </div>
             </div>
           </div>
 

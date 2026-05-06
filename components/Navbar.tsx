@@ -13,11 +13,13 @@ export default function Navbar() {
           <a href="#" className="flex items-center gap-3">
             <img
               src="/images/apm-logo-pill-web.png"
-              alt="APM"
-              className="h-9 w-auto"
+              alt="APM — Associação Paulista de Municípios"
+              className="h-11 w-auto"
             />
-            <span className="text-white/40 text-xs">+</span>
-            <span className="text-green font-extrabold text-lg">i10</span>
+            <div className="hidden sm:flex items-center gap-2">
+              <span className="text-white/40 text-xs">+</span>
+              <span className="text-green font-extrabold text-lg">i10</span>
+            </div>
           </a>
 
           <div className="hidden md:flex items-center gap-8">
