@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-teal: #0D7377;
+  --color-teal-dark: #0A5C5F;
+  --color-teal-darker: #084547;
+  --color-green: #00E5A0;
+  --color-green-light: #00E5A020;
+  --color-red-alert: #D4553A;
+  --color-orange-alert: #E8A838;
+  --color-text-dark: #1A202C;
+  --color-text-gray: #4A5568;
+  --color-text-light: #718096;
+  --color-bg-white: #ffffff;
+  --color-bg-gray: #F4F7FA;
+  --color-border: #DDE3EB;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-source-serif), "Source Serif 4", "Georgia", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg-white);
+  color: var(--color-text-dark);
+  font-family: var(--font-sans);
+}
+
+.chevron-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z' fill='none' stroke='%2300E5A0' stroke-width='0.5' opacity='0.08'/%3E%3C/svg%3E");
+  background-size: 60px 60px;
+}
+
+.glow-teal {
+  box-shadow: 0 0 20px rgba(13, 115, 119, 0.35), 0 0 60px rgba(13, 115, 119, 0.1);
+}
+
+.text-glow-green {
+  text-shadow: 0 0 20px rgba(0, 229, 160, 0.5), 0 0 40px rgba(0, 229, 160, 0.2);
+}
+
+.bg-brand-gradient {
+  background: linear-gradient(135deg, #0A5C5F 0%, #0D7377 50%, #11998E 100%);
+}
+
+.countdown-pulse {
+  animation: pulse-urgency 2s ease-in-out infinite;
+}
+
+@keyframes pulse-urgency {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
