@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Templates — Webinar FUNDEB 2026 | APM + i10</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #F4F7FA;
+      color: #1A202C;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .header {
+      background-color: #0A5C5F;
+      padding: 32px;
+      border-radius: 12px 12px 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header img { height: 40px; }
+    .header span { color: #00E5A0; font-size: 16px; font-weight: bold; }
+    .content {
+      background-color: #ffffff;
+      padding: 32px;
+      border-radius: 0 0 12px 12px;
+      border: 1px solid #DDE3EB;
+      border-top: none;
+    }
+    h1 {
+      font-size: 28px;
+      color: #1A202C;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: #718096;
+      font-size: 15px;
+      margin-bottom: 32px;
+    }
+    .flow-section {
+      margin-bottom: 32px;
+    }
+    .flow-title {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 16px;
+    }
+    .flow-outreach .flow-title {
+      background-color: #0D7377;
+      color: #ffffff;
+    }
+    .flow-registered .flow-title {
+      background-color: #00E5A0;
+      color: #0A5C5F;
+    }
+    .email-list {
+      list-style: none;
+    }
+    .email-item {
+      border: 1px solid #DDE3EB;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      transition: all 0.15s ease;
+    }
+    .email-item:hover {
+      border-color: #0D7377;
+      box-shadow: 0 2px 8px rgba(13, 115, 119, 0.1);
+    }
+    .email-item a {
+      display: flex;
+      align-items: center;
+      padding: 16px 20px;
+      text-decoration: none;
+      color: inherit;
+      gap: 16px;
+    }
+    .email-num {
+      background-color: #F4F7FA;
+      color: #0D7377;
+      font-size: 13px;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 4px;
+      white-space: nowrap;
+      min-width: 36px;
+      text-align: center;
+    }
+    .email-info { flex: 1; }
+    .email-name {
+      font-weight: 600;
+      font-size: 15px;
+      color: #1A202C;
+      margin-bottom: 2px;
+    }
+    .email-subject {
+      font-size: 13px;
+      color: #718096;
+    }
+    .email-date {
+      font-size: 12px;
+      color: #718096;
+      white-space: nowrap;
+    }
+    .email-urgency {
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    .urgency-low { background-color: #F0FFF4; color: #0A5C5F; }
+    .urgency-medium { background-color: #FEFCBF; color: #975A16; }
+    .urgency-high { background-color: #FFF5F5; color: #D4553A; }
+    .urgency-max { background-color: #D4553A; color: #ffffff; }
+
+    .footer {
+      text-align: center;
+      margin-top: 24px;
+      color: #718096;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .email-item a { flex-wrap: wrap; gap: 8px; }
+      .email-date { order: 3; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://apm-fundeb-sp.vercel.app/fundeb-sp/apm-logo-pill-web.png" alt="APM">
+      <span>Instituto i10</span>
+    </div>
+    <div class="content">
+      <h1>Email Templates</h1>
+      <p class="subtitle">Webinar FUNDEB 2026 &mdash; 15 de maio, 17h &mdash; 13 templates</p>
+
+      <!-- FLOW 1: OUTREACH -->
+      <div class="flow-section flow-outreach">
+        <span class="flow-title">Flow 1: Outreach (nao inscritos)</span>
+        <p style="color:#4A5568;font-size:14px;margin-bottom:16px;">Enviados a cada ~2 dias com urgencia crescente para quem ainda nao se inscreveu.</p>
+        <ul class="email-list">
+          <li class="email-item">
+            <a href="00-convite-inicial.html">
+              <span class="email-num">00</span>
+              <div class="email-info">
+                <div class="email-name">Convite Inicial</div>
+                <div class="email-subject">Webinar Gratuito: Como captar recursos do FUNDEB para seu municipio | APM</div>
+              </div>
+              <span class="email-urgency urgency-low">Informativo</span>
+              <span class="email-date">6/mai</span>
+            </a>
+          </li>
+          <li class="email-item">
+            <a href="01-urgencia-censo.html">
+              <span class="email-num">01</span>
+              <div class="email-info">
+                <div class="email-name">Urgencia Censo</div>
+                <div class="email-subject">URGENTE: Censo Escolar fecha dia 27 &mdash; Seu municipio esta preparado? | APM</div>
+              </div>
+              <span class="email-urgency urgency-medium">Urgente</span>
+              <span class="email-date">8/mai</span>
+            </a>
+          </li>
+          <li class="email-item">
+            <a href="02-conteudo-preview.html">
+              <span class="email-num">02</span>
+              <div class="email-info">
+                <div class="email-name">Preview de Conteudo</div>
+                <div class="email-subject">Faltam 5 dias: Veja o que voce vai aprender no webinar FUNDEB | APM</div>
+              </div>
+              <span class="email-urgency urgency-low">Conteudo</span>
+              <span class="email-date">10/mai</span>
+            </a>
+          </li>
+          <li class="email-item">
+            <a href="03-dinheiro-na-mesa.html">
+              <span class="email-num">03</span>
+              <div class="email-info">
+                <div class="email-name">Dinheiro na Mesa</div>
+                <div class="email-subject">ESTA SEMANA: Seu municipio esta deixando dinheiro na mesa? | APM</div>
+              </div>
+              <span class="email-urgency urgency-high">Alto Impacto</span>
+              <span class="email-date">12/mai</span>
+            </a>
+          </li>
+          <li class="email-item">
+            <a href="04-ultima-chance.html">
+              <span class="email-num">04</span>
+              <div class="email-info">
+                <div class="email-name">Ultima Chance</div>
+                <div class="email-subject">AMANHA: Ultima chance de se inscrever &mdash; Webinar FUNDEB | APM</div>
+              </div>
+              <span class="email-urgency urgency-max">Maximo</span>
+              <span class="email-date">14/mai</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- FLOW 2: REGISTERED -->
+      <div class="flow-section flow-registered">
+        <span class="flow-title">Flow 2: Inscritos (apos registro)</span>
+        <p style="color:#4A5568;font-size:14px;margin-bottom:16px;">Confirmacao automatica + lembretes com frequencia crescente ate o dia do evento.</p>
+        <ul class="email-list">
+          <li class="email-item">
+            <a href="10-confirmacao.html">
+              <span class="email-num">10</span>
+              <div class="email-info">
+                <div class="email-name">Confirmacao de Inscricao</div>
+                <div class="email-subject">Inscricao Confirmada &mdash; Webinar FUNDEB 2026 | APM + Instituto i10</div>
+              </div>
+              <span class="email-urgency urgency-low">Auto</span>
+              <span class="email-date">Imediato</span>
+            </a>
+          </li>
+          <li class="email-item">
+            <a href="11-uma-semana.html">
+              <span class="email-num">11</span>
+              <div class="email-info">
+                <div class="email-name">1 Semana Antes</div>
+                <div class="email-subject">O webinar FUNDEB e na proxima semana! | APM + i10</div>
+              </div>
+              <span class="email-urgency urgency-low">Lembrete</span>
+              <span class="email-date">7/mai 09h</span>
+            </a>
+          </li>
+          <li class="email-item">
+            <a href="12-preview-conteudo.html">
+              <span class="email-num">12</span>
+              <div class="email-info">
+                <div class="email-name">Preview de Conteudo</div>
+                <div class="email-subject">O que voce vai aprender no webinar FUNDEB | APM + i10</div>
+              </div>
+              <span class="email-urgency urgency-low">Conteudo</span>
+              <span class="email-date">9/mai 10h</span>
+            </a>
+          </li>
+          <li class="email-item">
+            <a href="13-esta-semana.html">
+              <span class="email-num">13</span>
+              <div class="email-info">
+                <div class="email-name">Esta Semana</div>
+                <div class="email-subject">E ESTA SEMANA &mdash; Webinar FUNDEB sexta as 17h | APM + i10</div>
+              </div>
+              <span class="email-urgency urgency-medium">Urgente</span>
+              <span class="email-date">12/mai 09h</span>
+            </a>
+          </li>
+          <li class="email-item">
+            <a href="14-vespera.html">
+              <span class="email-num">14</span>
+              <div class="email-info">
+                <div class="email-name">Vespera</div>
+                <div class="email-subject">AMANHA as 17h &mdash; Webinar FUNDEB 2026 | APM + i10</div>
+              </div>
+              <span class="email-urgency urgency-high">Alto</span>
+              <span class="email-date">14/mai 10h</span>
+            </a>
+          </li>
+          <li class="email-item">
+            <a href="15-dia-do-evento.html">
+              <span class="email-num">15</span>
+              <div class="email-info">
+                <div class="email-name">Dia do Evento</div>
+                <div class="email-subject">HOJE as 17h &mdash; Webinar FUNDEB 2026 | APM + i10</div>
+              </div>
+              <span class="email-urgency urgency-high">Alto</span>
+              <span class="email-date">15/mai 09h</span>
+            </a>
+          </li>
+          <li class="email-item">
+            <a href="16-dez-minutos.html">
+              <span class="email-num">16</span>
+              <div class="email-info">
+                <div class="email-name">10 Minutos!</div>
+                <div class="email-subject">COMECA EM 10 MINUTOS &mdash; Entre agora! | APM + i10</div>
+              </div>
+              <span class="email-urgency urgency-max">Maximo</span>
+              <span class="email-date">15/mai 16:50</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer">APM + Instituto i10 &mdash; Webinar FUNDEB 2026 &mdash; Email Templates</p>
+  </div>
+</body>
+</html>
