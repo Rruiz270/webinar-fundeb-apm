@@ -44,9 +44,9 @@ export default function Hero() {
             <div className="flex flex-col items-center lg:items-start gap-4 mt-2">
               <div className="flex items-center gap-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-6 py-4">
                 <img
-                  src="https://webinar-fundeb-apm.vercel.app/images/apm-logo-horizontal.png"
+                  src="https://webinar-fundeb-apm.vercel.app/images/apm-logo-pill-web.png"
                   alt="APM — Associação Paulista de Municípios"
-                  className="h-14 sm:h-16 w-auto"
+                  className="h-16 sm:h-20 w-auto"
                 />
                 <div className="w-px h-10 bg-white/30" />
                 <div className="flex flex-col">

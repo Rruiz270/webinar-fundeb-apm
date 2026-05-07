@@ -14,7 +14,7 @@ export default function Navbar() {
             <img
               src="https://webinar-fundeb-apm.vercel.app/images/apm-logo-pill-web.png"
               alt="APM — Associação Paulista de Municípios"
-              className="h-11 w-auto"
+              className="h-12 w-auto"
             />
             <div className="hidden sm:flex items-center gap-2">
               <span className="text-white/40 text-xs">+</span>

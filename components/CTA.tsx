@@ -30,9 +30,9 @@ export default function CTA() {
 
         <div className="mt-8 flex items-center justify-center gap-5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-8 py-5 mx-auto w-fit">
           <img
-            src="https://webinar-fundeb-apm.vercel.app/images/apm-logo-horizontal.png"
+            src="https://webinar-fundeb-apm.vercel.app/images/apm-logo-pill-web.png"
             alt="APM — Associação Paulista de Municípios"
-            className="h-12 sm:h-14 w-auto"
+            className="h-14 sm:h-18 w-auto"
           />
           <div className="w-px h-10 bg-white/30" />
           <div className="flex flex-col items-start">
