@@ -33,10 +33,10 @@ export default function Topics() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 font-serif">
-            O que voce vai aprender
+            O que você vai aprender
           </h2>
           <p className="text-lg text-white/60 max-w-2xl mx-auto">
-            1 hora de conteudo pratico dividido em 3 blocos essenciais para captar recursos e se adequar as exigencias.
+            1 hora de conteúdo prático dividido em 3 blocos essenciais para captar recursos e se adequar às exigências.
           </p>
         </div>
 

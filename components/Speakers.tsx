@@ -9,7 +9,7 @@ export default function Speakers() {
             Seus Palestrantes
           </h2>
           <p className="text-base text-white/50">
-            Especialistas com experiencia pratica em gestao educacional e captacao de recursos.
+            Especialistas com experiência prática em gestão educacional e captação de recursos.
           </p>
         </div>
 

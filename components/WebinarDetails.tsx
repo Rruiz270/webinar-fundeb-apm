@@ -3,8 +3,8 @@ import { SITE, HERO } from "@/lib/constants";
 export default function WebinarDetails() {
   const details = [
     { icon: "calendar", label: "Data", value: SITE.webinarDate },
-    { icon: "clock", label: "Horario", value: SITE.webinarTime + " (horario de Brasilia)" },
-    { icon: "timer", label: "Duracao", value: SITE.webinarDuration },
+    { icon: "clock", label: "Horário", value: SITE.webinarTime + " (horário de Brasília)" },
+    { icon: "timer", label: "Duração", value: SITE.webinarDuration },
     { icon: "users", label: "Palestrantes", value: "Luciane Biancardi & Felipe Miguel" },
     { icon: "laptop", label: "Formato", value: SITE.format },
     { icon: "certificate", label: "Certificado", value: SITE.certificate },
@@ -36,7 +36,7 @@ export default function WebinarDetails() {
             Detalhes do Webinar
           </h2>
           <p className="text-lg text-white/60">
-            Tudo que voce precisa saber antes de se inscrever.
+            Tudo que você precisa saber antes de se inscrever.
           </p>
         </div>
 

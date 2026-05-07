@@ -65,7 +65,7 @@ export default function SubscribeForm() {
 
       setSuccess(true);
     } catch {
-      setErrorMsg("Erro de conexao. Tente novamente.");
+      setErrorMsg("Erro de conexão. Tente novamente.");
     } finally {
       setLoading(false);
     }
@@ -90,7 +90,7 @@ export default function SubscribeForm() {
           </svg>
         </div>
         <h3 className="text-xl font-bold text-text-dark mb-2">
-          Inscricao confirmada!
+          Inscrição confirmada!
         </h3>
         <p className="text-text-gray">
           Obrigado, <span className="font-semibold">{nome}</span>! Confira seu
@@ -116,7 +116,7 @@ export default function SubscribeForm() {
         </span>
       </div>
       <p className="text-sm text-text-gray mb-6">
-        18 de Maio as 15h | Google Meet | APM + Instituto i10
+        18 de Maio às 15h | Google Meet | APM + Instituto i10
       </p>
 
       {errorMsg && (
@@ -173,7 +173,7 @@ export default function SubscribeForm() {
           onClick={() => setShowOptional(true)}
           className="mb-4 text-sm text-teal hover:text-teal-dark transition-colors lg:hidden"
         >
-          + Adicionar telefone, municipio e cargo (opcional)
+          + Adicionar telefone, município e cargo (opcional)
         </button>
       )}
 
@@ -206,7 +206,7 @@ export default function SubscribeForm() {
               htmlFor="municipio"
               className="block text-sm font-medium text-text-dark mb-1"
             >
-              Municipio
+              Município
             </label>
             <input
               id="municipio"
@@ -248,7 +248,7 @@ export default function SubscribeForm() {
               className="mt-0.5 w-4 h-4 rounded border-border text-teal focus:ring-teal"
             />
             <span className="text-xs text-text-gray">
-              Aceito receber atualizacoes sobre o webinar e conteudos da APM e Instituto i10.
+              Aceito receber atualizações sobre o webinar e conteúdos da APM e Instituto i10.
             </span>
           </label>
         </div>
@@ -283,12 +283,12 @@ export default function SubscribeForm() {
             Enviando...
           </>
         ) : (
-          "Inscrever Agora — E Gratuito"
+          "Inscrever Agora — É Gratuito"
         )}
       </button>
 
       <p className="mt-3 text-center text-xs text-text-light">
-        Vagas limitadas. O link do Google Meet sera enviado por e-mail.
+        Vagas limitadas. O link do Google Meet será enviado por e-mail.
       </p>
     </form>
   );

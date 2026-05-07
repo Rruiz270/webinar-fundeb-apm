@@ -17,7 +17,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-xs text-white/40 italic">
-              Captando recursos para a educacao publica
+              Captando recursos para a educação pública
             </p>
           </div>
 
@@ -26,7 +26,7 @@ export default function Footer() {
               Inscreva-se
             </a>
             <a href="#conteudo" className="text-white/60 hover:text-white transition-colors">
-              Conteudo
+              Conteúdo
             </a>
             <a href="#faq" className="text-white/60 hover:text-white transition-colors">
               FAQ
@@ -38,7 +38,7 @@ export default function Footer() {
 
         <div className="mt-6 text-center">
           <p className="text-xs text-white/40">
-            &copy; {new Date().getFullYear()} APM — Associacao Paulista de Municipios em parceria com Instituto i10. Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} APM — Associação Paulista de Municípios em parceria com Instituto i10. Todos os direitos reservados.
           </p>
         </div>
       </div>

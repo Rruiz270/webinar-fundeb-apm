@@ -8,7 +8,7 @@ export async function GET(request: Request) {
 
   if (!cronSecret || authHeader !== `Bearer ${cronSecret}`) {
     return NextResponse.json(
-      { success: false, error: "Nao autorizado" },
+      { success: false, error: "Não autorizado" },
       { status: 401 }
     );
   }
@@ -18,7 +18,7 @@ export async function GET(request: Request) {
   if (!reminder) {
     return NextResponse.json({
       success: true,
-      message: "Nenhum lembrete agendado para este horario",
+      message: "Nenhum lembrete agendado para este horário",
     });
   }
 
@@ -28,7 +28,7 @@ export async function GET(request: Request) {
     if (result.alreadySent) {
       return NextResponse.json({
         success: true,
-        message: `Lembrete "${reminder.id}" ja foi enviado anteriormente`,
+        message: `Lembrete "${reminder.id}" já foi enviado anteriormente`,
         result,
       });
     }

@@ -10,10 +10,10 @@ export default function CTA() {
         </div>
 
         <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 font-serif">
-          Nao deixe seu municipio perder recursos
+          Não deixe seu município perder recursos
         </h2>
         <p className="text-lg text-white/70 mb-8 max-w-xl mx-auto">
-          Inscreva-se agora e aprenda como maximizar a captacao do FUNDEB antes que o prazo do Censo Escolar expire.
+          Inscreva-se agora e aprenda como maximizar a captação do FUNDEB antes que o prazo do Censo Escolar expire.
         </p>
         <a
           href="#inscricao"

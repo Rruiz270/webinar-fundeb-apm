@@ -55,7 +55,7 @@ export default function AdminPage() {
       setTotal(data.total);
       setAuthenticated(true);
     } catch {
-      setError("Erro de conexao");
+      setError("Erro de conexão");
     } finally {
       setLoading(false);
     }
@@ -72,10 +72,10 @@ export default function AdminPage() {
       "Nome",
       "Email",
       "Telefone",
-      "Municipio",
+      "Município",
       "Cargo",
-      "Aceita Atualizacoes",
-      "Data Inscricao",
+      "Aceita Atualizações",
+      "Data Inscrição",
     ];
 
     const rows = subscribers.map((s) => [
@@ -85,7 +85,7 @@ export default function AdminPage() {
       s.telefone || "",
       `"${s.municipio || ""}"`,
       `"${s.cargo || ""}"`,
-      s.aceita_atualizacoes ? "Sim" : "Nao",
+      s.aceita_atualizacoes ? "Sim" : "Não",
       new Date(s.createdAt).toLocaleString("pt-BR"),
     ]);
 
@@ -100,7 +100,7 @@ export default function AdminPage() {
   }
 
   function exportExcel() {
-    const headers = ["ID", "Nome", "Email", "Telefone", "Municipio", "Cargo", "Data"];
+    const headers = ["ID", "Nome", "Email", "Telefone", "Município", "Cargo", "Data"];
     const rows = subscribers.map((s) => [
       s.id,
       s.nome,
@@ -141,13 +141,13 @@ export default function AdminPage() {
   });
 
   const cargoStats = subscribers.reduce<Record<string, number>>((acc, s) => {
-    const key = s.cargo || "Nao informado";
+    const key = s.cargo || "Não informado";
     acc[key] = (acc[key] || 0) + 1;
     return acc;
   }, {});
 
   const municipioStats = subscribers.reduce<Record<string, number>>((acc, s) => {
-    const key = s.municipio || "Nao informado";
+    const key = s.municipio || "Não informado";
     acc[key] = (acc[key] || 0) + 1;
     return acc;
   }, {});
@@ -196,7 +196,7 @@ export default function AdminPage() {
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
             <h1 className="text-lg font-bold">Dashboard — Webinar FUNDEB 2026</h1>
-            <p className="text-sm text-white/60">{total} inscrito(s) | 18 de Maio as 15h</p>
+            <p className="text-sm text-white/60">{total} inscrito(s) | 18 de Maio às 15h</p>
           </div>
           <div className="flex flex-wrap gap-2">
             <button
@@ -209,7 +209,7 @@ export default function AdminPage() {
               onClick={() => setTab("stats")}
               className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all ${tab === "stats" ? "bg-green text-teal-darker" : "bg-white/20 text-white hover:bg-white/30"}`}
             >
-              Estatisticas
+              Estatísticas
             </button>
             <button
               onClick={() => setTab("emails")}
@@ -242,7 +242,7 @@ export default function AdminPage() {
             </div>
             <div className="bg-white rounded-xl shadow border border-border p-6 text-center">
               <p className="text-4xl font-bold text-teal">{Object.keys(municipioStats).length}</p>
-              <p className="text-sm text-text-gray mt-1">Municipios</p>
+              <p className="text-sm text-text-gray mt-1">Municípios</p>
             </div>
             <div className="bg-white rounded-xl shadow border border-border p-6 text-center">
               <p className="text-4xl font-bold text-teal">{emailLogs.length}</p>
@@ -261,7 +261,7 @@ export default function AdminPage() {
               ))}
             </div>
             <div className="bg-white rounded-xl shadow border border-border p-6">
-              <h3 className="font-bold text-text-dark mb-4">Por Municipio</h3>
+              <h3 className="font-bold text-text-dark mb-4">Por Município</h3>
               {Object.entries(municipioStats).sort((a, b) => b[1] - a[1]).slice(0, 15).map(([mun, count]) => (
                 <div key={mun} className="flex items-center justify-between py-2 border-b border-border last:border-0">
                   <span className="text-sm text-text-gray">{mun}</span>
@@ -314,7 +314,7 @@ export default function AdminPage() {
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              placeholder="Buscar por nome, email, municipio ou cargo..."
+              placeholder="Buscar por nome, email, município ou cargo..."
               className="w-full max-w-md px-4 py-3 rounded-lg border border-border text-sm text-text-dark placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent"
             />
           </div>
@@ -326,7 +326,7 @@ export default function AdminPage() {
                   <th className="text-left px-4 py-3 font-semibold text-text-dark">Nome</th>
                   <th className="text-left px-4 py-3 font-semibold text-text-dark">Email</th>
                   <th className="text-left px-4 py-3 font-semibold text-text-dark">Telefone</th>
-                  <th className="text-left px-4 py-3 font-semibold text-text-dark">Municipio</th>
+                  <th className="text-left px-4 py-3 font-semibold text-text-dark">Município</th>
                   <th className="text-left px-4 py-3 font-semibold text-text-dark">Cargo</th>
                   <th className="text-left px-4 py-3 font-semibold text-text-dark">Data</th>
                 </tr>

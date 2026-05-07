@@ -12,10 +12,10 @@ export default function Urgency() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="text-center mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 font-serif">
-            Por que voce precisa agir AGORA
+            Por que você precisa agir AGORA
           </h2>
           <p className="text-base text-white/50 max-w-2xl mx-auto">
-            Cada dia sem acao representa recursos perdidos para a educacao do seu municipio.
+            Cada dia sem ação representa recursos perdidos para a educação do seu município.
           </p>
         </div>
 
@@ -46,11 +46,11 @@ export default function Urgency() {
 
         <div className="mt-8 rounded-xl bg-red-alert/15 border border-red-alert/40 p-4 sm:p-6 text-center">
           <p className="text-white font-bold text-base sm:text-lg">
-            <span className="text-red-alert">DATA CRITICA:</span>{" "}
+            <span className="text-red-alert">DATA CRÍTICA:</span>{" "}
             27 de Maio de 2026 — Censo Escolar
           </p>
           <p className="text-white/60 text-sm mt-1">
-            Matriculas nao registradas ate esta data = recursos perdidos por todo o ano letivo de 2026
+            Matrículas não registradas até esta data = recursos perdidos por todo o ano letivo de 2026
           </p>
         </div>
       </div>

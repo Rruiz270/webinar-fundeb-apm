@@ -7,7 +7,7 @@ export async function GET(request: Request) {
 
   if (!token || token !== process.env.ADMIN_PASSWORD) {
     return NextResponse.json(
-      { success: false, error: "Nao autorizado" },
+      { success: false, error: "Não autorizado" },
       { status: 401 }
     );
   }
@@ -26,7 +26,7 @@ export async function GET(request: Request) {
     return NextResponse.json({ success: true, total, subscribers, emailLogs });
   } catch {
     return NextResponse.json(
-      { success: false, error: "Erro ao buscar inscricoes" },
+      { success: false, error: "Erro ao buscar inscrições" },
       { status: 500 }
     );
   }

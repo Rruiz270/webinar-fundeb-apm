@@ -15,9 +15,9 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "Webinar FUNDEB 2026 — Captacao de Recursos | APM + Instituto i10",
+  title: "Webinar FUNDEB 2026 — Captação de Recursos | APM + Instituto i10",
   description:
-    "Webinar gratuito: Como captar recursos do FUNDEB para educacao do seu municipio. Censo Escolar 27/05, BNCC Computacao, VAAR. APM em parceria com Instituto i10.",
+    "Webinar gratuito: Como captar recursos do FUNDEB para educação do seu município. Censo Escolar 27/05, BNCC Computação, VAAR. APM em parceria com Instituto i10.",
 };
 
 export default function RootLayout({
