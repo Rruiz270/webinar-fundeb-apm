@@ -6,7 +6,7 @@ export default function Footer() {
           <div className="flex flex-col items-center sm:items-start gap-3">
             <div className="flex items-center gap-4">
               <img
-                src="/images/apm-logo-horizontal.png"
+                src="https://webinar-fundeb-apm.vercel.app/images/apm-logo-horizontal.png"
                 alt="APM — Associação Paulista de Municípios"
                 className="h-14 w-auto"
               />

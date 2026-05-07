@@ -12,7 +12,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <a href="#" className="flex items-center gap-3">
             <img
-              src="/images/apm-logo-pill-web.png"
+              src="https://webinar-fundeb-apm.vercel.app/images/apm-logo-pill-web.png"
               alt="APM — Associação Paulista de Municípios"
               className="h-11 w-auto"
             />

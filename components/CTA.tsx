@@ -30,7 +30,7 @@ export default function CTA() {
 
         <div className="mt-8 flex items-center justify-center gap-5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-8 py-5 mx-auto w-fit">
           <img
-            src="/images/apm-logo-horizontal.png"
+            src="https://webinar-fundeb-apm.vercel.app/images/apm-logo-horizontal.png"
             alt="APM — Associação Paulista de Municípios"
             className="h-12 sm:h-14 w-auto"
           />
