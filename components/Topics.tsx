@@ -36,7 +36,7 @@ export default function Topics() {
             O que voce vai aprender
           </h2>
           <p className="text-lg text-white/60 max-w-2xl mx-auto">
-            1h30 de conteudo pratico dividido em 3 blocos essenciais para captar recursos e se adequar as exigencias.
+            1 hora de conteudo pratico dividido em 3 blocos essenciais para captar recursos e se adequar as exigencias.
           </p>
         </div>
 

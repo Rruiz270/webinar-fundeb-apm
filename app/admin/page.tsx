@@ -196,7 +196,7 @@ export default function AdminPage() {
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
             <h1 className="text-lg font-bold">Dashboard — Webinar FUNDEB 2026</h1>
-            <p className="text-sm text-white/60">{total} inscrito(s) | 15 de Maio as 17h</p>
+            <p className="text-sm text-white/60">{total} inscrito(s) | 18 de Maio as 15h</p>
           </div>
           <div className="flex flex-wrap gap-2">
             <button

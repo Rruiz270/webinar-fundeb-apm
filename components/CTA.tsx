@@ -6,7 +6,7 @@ export default function CTA() {
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-alert/20 text-white text-sm font-bold mb-6">
           <span className="w-2 h-2 rounded-full bg-red-alert countdown-pulse" />
-          FALTAM APENAS 21 DIAS PARA O CENSO ESCOLAR
+          FALTAM APENAS 20 DIAS PARA O CENSO ESCOLAR
         </div>
 
         <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 font-serif">

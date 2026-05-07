@@ -20,11 +20,11 @@ const eventCard = `
     <table style="width:100%;border-collapse:collapse;">
       <tr>
         <td style="padding:6px 0;color:#718096;font-size:12px;text-transform:uppercase;letter-spacing:1px;width:100px;">Data</td>
-        <td style="padding:6px 0;color:#1A202C;font-size:14px;font-weight:600;">Sexta-feira, 15 de Maio de 2026</td>
+        <td style="padding:6px 0;color:#1A202C;font-size:14px;font-weight:600;">Segunda-feira, 18 de Maio de 2026</td>
       </tr>
       <tr>
         <td style="padding:6px 0;color:#718096;font-size:12px;text-transform:uppercase;letter-spacing:1px;">Horario</td>
-        <td style="padding:6px 0;color:#1A202C;font-size:14px;font-weight:600;">17:00 – 18:30 (horario de Brasilia)</td>
+        <td style="padding:6px 0;color:#1A202C;font-size:14px;font-weight:600;">15:00 – 16:00 (horario de Brasilia)</td>
       </tr>
       <tr>
         <td style="padding:6px 0;color:#718096;font-size:12px;text-transform:uppercase;letter-spacing:1px;">Formato</td>
@@ -75,13 +75,13 @@ export const REMINDERS: Reminder[] = [
     bodyHtml: `
       <h2 style="color:#0A5C5F;font-size:22px;margin:0 0 8px;">Preview: o que voce vai aprender</h2>
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
-        Preparamos 1h30 de conteudo pratico dividido em <strong>3 blocos</strong>:
+        Preparamos 1 hora de conteudo pratico dividido em <strong>3 blocos</strong>:
       </p>
       <table style="width:100%;border-collapse:collapse;margin:20px 0;">
         <tr>
           <td style="padding:8px 12px;background:#0A5C5F08;border-radius:6px;">
             <span style="color:#0D7377;font-weight:700;font-size:13px;">FUNDEB & CENSO</span>
-            <span style="color:#718096;font-size:12px;"> — 30 min</span><br>
+            <span style="color:#718096;font-size:12px;"> — 20 min</span><br>
             <span style="color:#4A5568;font-size:13px;">15 categorias de matricula, fatores de ponderacao e o prazo critico de 27/05</span>
           </td>
         </tr>
@@ -89,16 +89,16 @@ export const REMINDERS: Reminder[] = [
         <tr>
           <td style="padding:8px 12px;background:#0A5C5F08;border-radius:6px;">
             <span style="color:#0D7377;font-weight:700;font-size:13px;">BNCC COMPUTACAO</span>
-            <span style="color:#718096;font-size:12px;"> — 30 min</span><br>
+            <span style="color:#718096;font-size:12px;"> — 15 min</span><br>
             <span style="color:#4A5568;font-size:13px;">Resolucao CNE/CEB 1/2022, prazos e impacto de ate 2.5% do FUNDEB</span>
           </td>
         </tr>
         <tr><td style="height:4px;"></td></tr>
         <tr>
           <td style="padding:8px 12px;background:#0A5C5F08;border-radius:6px;">
-            <span style="color:#0D7377;font-weight:700;font-size:13px;">VAAR & COMPLIANCE</span>
-            <span style="color:#718096;font-size:12px;"> — 30 min</span><br>
-            <span style="color:#4A5568;font-size:13px;">5 condicionalidades, sistema BNCC-CAPTACAO e plano em 7 semanas</span>
+            <span style="color:#0D7377;font-weight:700;font-size:13px;">PERGUNTAS & RESPOSTAS</span>
+            <span style="color:#718096;font-size:12px;"> — 10 min</span><br>
+            <span style="color:#4A5568;font-size:13px;">Tire suas duvidas ao vivo com os palestrantes</span>
           </td>
         </tr>
       </table>
@@ -112,13 +112,13 @@ export const REMINDERS: Reminder[] = [
   // #3 — Seg 12/Mai 09:00 BRT
   {
     id: "r3_semana_do_evento",
-    subject: "E ESTA SEMANA — Webinar FUNDEB sexta as 17h | APM + i10",
-    date: "2026-05-12",
+    subject: "E ESTA SEMANA — Webinar FUNDEB segunda as 15h | APM + i10",
+    date: "2026-05-14",
     time: "09:00",
     bodyHtml: `
       <h2 style="color:#0A5C5F;font-size:22px;margin:0 0 8px;">E esta semana!</h2>
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
-        Faltam apenas <strong>3 dias</strong> para o webinar com <strong>Luciane Biancardi</strong> e <strong>Felipe Miguel</strong>.
+        Faltam apenas <strong>4 dias</strong> para o webinar com <strong>Luciane Biancardi</strong> e <strong>Felipe Miguel</strong>.
       </p>
       ${urgencyBanner}
       ${eventCard}
@@ -126,7 +126,7 @@ export const REMINDERS: Reminder[] = [
         <strong>Prepare-se:</strong>
       </p>
       <ul style="color:#4A5568;font-size:14px;line-height:1.8;margin:0 0 16px;padding-left:20px;">
-        <li>Reserve 1h30 sem interrupcoes (17h – 18h30)</li>
+        <li>Reserve 1 hora sem interrupcoes (15h – 16h)</li>
         <li>Tenha papel e caneta para anotar</li>
         <li>Convide colegas da secretaria</li>
       </ul>
@@ -136,17 +136,17 @@ export const REMINDERS: Reminder[] = [
   // #4 — Qui 14/Mai 10:00 BRT
   {
     id: "r4_vespera",
-    subject: "AMANHA as 17h — Webinar FUNDEB 2026 | APM + i10",
-    date: "2026-05-14",
+    subject: "AMANHA as 15h — Webinar FUNDEB 2026 | APM + i10",
+    date: "2026-05-17",
     time: "10:00",
     bodyHtml: `
       <h2 style="color:#0A5C5F;font-size:22px;margin:0 0 8px;">E amanha!</h2>
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
-        <strong>Amanha, sexta-feira 15 de Maio as 17h</strong>, comeca o webinar FUNDEB 2026 com Luciane Biancardi e Felipe Miguel.
+        <strong>Amanha, segunda-feira 18 de Maio as 15h</strong>, comeca o webinar FUNDEB 2026 com Luciane Biancardi e Felipe Miguel.
       </p>
       <div style="background:#EFF6FF;border:1px solid #3B82F640;border-radius:8px;padding:16px;margin:16px 0;">
         <p style="color:#1E40AF;font-size:14px;margin:0;">
-          Recomendamos entrar no Google Meet <strong>5 minutos antes</strong> das 17h.
+          Recomendamos entrar no Google Meet <strong>5 minutos antes</strong> das 15h.
         </p>
       </div>
       ${eventCard}
@@ -159,19 +159,19 @@ export const REMINDERS: Reminder[] = [
   // #5 — Sex 15/Mai 09:00 BRT
   {
     id: "r5_dia_do_evento",
-    subject: "HOJE as 17h — Webinar FUNDEB 2026 | APM + i10",
-    date: "2026-05-15",
+    subject: "HOJE as 15h — Webinar FUNDEB 2026 | APM + i10",
+    date: "2026-05-18",
     time: "09:00",
     bodyHtml: `
       <h2 style="color:#0A5C5F;font-size:22px;margin:0 0 12px;">
-        <span style="color:#00E5A0;">HOJE</span> as 17h!
+        <span style="color:#00E5A0;">HOJE</span> as 15h!
       </h2>
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
-        O dia chegou! <strong>Hoje as 17:00</strong> comeca o webinar <strong>FUNDEB 2026</strong> com a APM e Instituto i10.
+        O dia chegou! <strong>Hoje as 15:00</strong> comeca o webinar <strong>FUNDEB 2026</strong> com a APM e Instituto i10.
       </p>
       <div style="background:#F0FDF4;border:1px solid #22C55E40;border-radius:8px;padding:16px;margin:16px 0;">
         <p style="color:#166534;font-size:14px;margin:0;">
-          Em <strong>1h30 de conteudo pratico</strong>, voce vai sair com um plano de acao completo para captar recursos do FUNDEB.
+          Em <strong>1 hora de conteudo pratico</strong>, voce vai sair com um plano de acao completo para captar recursos do FUNDEB.
         </p>
       </div>
       ${eventCard}
@@ -181,15 +181,15 @@ export const REMINDERS: Reminder[] = [
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
         <a href="${MEET_LINK}" style="color:#0D7377;font-weight:600;">${MEET_LINK}</a>
       </p>
-      ${greenButton("Entrar no Google Meet as 17h", MEET_LINK)}`,
+      ${greenButton("Entrar no Google Meet as 15h", MEET_LINK)}`,
   },
 
-  // #6 — Sex 15/Mai 16:50 BRT
+  // #6 — Seg 18/Mai 14:50 BRT
   {
     id: "r6_dez_minutos",
     subject: "COMECA EM 10 MINUTOS — Entre agora! | APM + i10",
-    date: "2026-05-15",
-    time: "16:50",
+    date: "2026-05-18",
+    time: "14:50",
     bodyHtml: `
       <div style="text-align:center;">
         <h2 style="color:#0A5C5F;font-size:24px;margin:0 0 12px;">
@@ -208,7 +208,7 @@ export const REMINDERS: Reminder[] = [
         </p>
       </div>
       <p style="color:#718096;font-size:13px;line-height:1.5;margin:0;text-align:center;">
-        17:00 – 18:30 (horario de Brasilia) | Google Meet
+        15:00 – 16:00 (horario de Brasilia) | Google Meet
       </p>`,
   },
 ];
@@ -225,7 +225,7 @@ export const REENGAGEMENT_TEMPLATES = [
     bodyHtml: `
       <h2 style="color:#0A5C5F;font-size:22px;margin:0 0 8px;">Secretario(a), voce ja garantiu sua vaga?</h2>
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
-        No dia <strong>15 de Maio as 17h</strong>, a APM e o Instituto i10 realizam um webinar gratuito sobre <strong>como captar recursos do FUNDEB</strong> para a educacao do seu municipio.
+        No dia <strong>18 de Maio as 15h</strong>, a APM e o Instituto i10 realizam um webinar gratuito sobre <strong>como captar recursos do FUNDEB</strong> para a educacao do seu municipio.
       </p>
       ${urgencyBanner}
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
@@ -251,18 +251,18 @@ export const REENGAGEMENT_TEMPLATES = [
         </p>
       </div>
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
-        Nosso webinar gratuito no dia <strong>15 de Maio as 17h</strong> vai mostrar exatamente o que fazer. Inscreva-se agora — vagas limitadas.
+        Nosso webinar gratuito no dia <strong>18 de Maio as 15h</strong> vai mostrar exatamente o que fazer. Inscreva-se agora — vagas limitadas.
       </p>
       ${greenButton("Garantir Minha Vaga — Gratuito", "{{LP_URL}}")}`,
   },
   {
     id: "re3_dia_10",
     sendDate: "2026-05-10",
-    subject: "Faltam 5 dias: Webinar que pode mudar a captacao do seu municipio | APM",
+    subject: "Faltam 8 dias: Webinar que pode mudar a captacao do seu municipio | APM",
     bodyHtml: `
       <h2 style="color:#0A5C5F;font-size:22px;margin:0 0 8px;">Ultima chamada para esta semana</h2>
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
-        Na <strong>proxima sexta-feira (15/05)</strong>, especialistas em captacao de recursos vao revelar:
+        Na <strong>proxima segunda-feira (18/05)</strong>, especialistas em captacao de recursos vao revelar:
       </p>
       <ul style="color:#4A5568;font-size:14px;line-height:1.8;margin:0 0 16px;padding-left:20px;">
         <li>Como identificar <strong>6 alavancas de captacao</strong> do FUNDEB</li>
@@ -286,7 +286,7 @@ export const REENGAGEMENT_TEMPLATES = [
         Municipios que <strong>nao otimizam sua captacao do FUNDEB</strong> perdem centenas de milhares de reais por ano. As condicionalidades do VAAR sozinhas representam <strong>R$ 710 por aluno</strong>.
       </p>
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
-        <strong>Esta sexta-feira as 17h</strong>, Luciane Biancardi e Felipe Miguel vao mostrar como reverter isso.
+        <strong>Esta segunda-feira as 15h</strong>, Luciane Biancardi e Felipe Miguel vao mostrar como reverter isso.
       </p>
       <div style="background:#F0FDF4;border:1px solid #22C55E40;border-radius:8px;padding:16px;margin:16px 0;">
         <p style="color:#166534;font-size:14px;margin:0;">
@@ -297,15 +297,15 @@ export const REENGAGEMENT_TEMPLATES = [
   },
   {
     id: "re5_dia_14",
-    sendDate: "2026-05-14",
+    sendDate: "2026-05-17",
     subject: "AMANHA: Ultima chance de se inscrever — Webinar FUNDEB | APM",
     bodyHtml: `
       <h2 style="color:#D4553A;font-size:22px;margin:0 0 8px;">Amanha e o ultimo dia</h2>
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
-        <strong>Amanha as 17h</strong> acontece o webinar que pode mudar a captacao de recursos do seu municipio. E a ultima chance de se inscrever.
+        <strong>Amanha as 15h</strong> acontece o webinar que pode mudar a captacao de recursos do seu municipio. E a ultima chance de se inscrever.
       </p>
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
-        Faltam <strong>13 dias para o fechamento do Censo Escolar</strong>. Quem nao agir agora, perde por 12 meses.
+        Faltam <strong>10 dias para o fechamento do Censo Escolar</strong>. Quem nao agir agora, perde por 12 meses.
       </p>
       ${urgencyBanner}
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">

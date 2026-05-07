@@ -1,8 +1,8 @@
 export const SITE = {
   name: "APM + Instituto i10",
-  webinarDate: "15 de Maio, 2026",
-  webinarTime: "17:00",
-  webinarDuration: "1h30",
+  webinarDate: "18 de Maio, 2026",
+  webinarTime: "15:00",
+  webinarDuration: "1 hora",
   format: "Google Meet (ao vivo)",
   certificate: "Sim, com certificado de participacao",
   material: "Acesso a gravacao e materiais complementares",
@@ -32,7 +32,7 @@ export const HERO = {
 
 export const URGENCY_ITEMS = [
   {
-    value: "21",
+    value: "20",
     suffix: "dias",
     label: "ate o Censo Escolar",
     description: "Prazo limite: 27 de maio de 2026. Matriculas nao registradas = recursos perdidos por 1 ano",
@@ -58,7 +58,7 @@ export const TOPICS = [
   {
     icon: "fundeb" as const,
     title: "FUNDEB & CENSO",
-    duration: "30 min",
+    duration: "20 min",
     items: [
       "Como funciona a captacao do FUNDEB 2026",
       "As 15 categorias de matricula e seus fatores",
@@ -69,7 +69,7 @@ export const TOPICS = [
   {
     icon: "bncc" as const,
     title: "BNCC COMPUTACAO",
-    duration: "30 min",
+    duration: "15 min",
     items: [
       "O que a Resolucao CNE/CEB 1/2022 exige",
       "Prazos de adequacao para 2026",
@@ -79,13 +79,13 @@ export const TOPICS = [
   },
   {
     icon: "vaar" as const,
-    title: "VAAR & COMPLIANCE",
-    duration: "30 min",
+    title: "PERGUNTAS & RESPOSTAS",
+    duration: "10 min",
     items: [
-      "As 5 condicionalidades do VAAR explicadas",
-      "Como nosso sistema BNCC-CAPTACAO ajuda",
-      "Plano de acao em 7 semanas ate o Censo",
-      "Cases de sucesso de municipios paulistas",
+      "Tire suas duvidas ao vivo com os palestrantes",
+      "Casos praticos do seu municipio",
+      "Proximos passos e plano de acao",
+      "Como acessar o sistema BNCC-CAPTACAO",
     ],
   },
 ];

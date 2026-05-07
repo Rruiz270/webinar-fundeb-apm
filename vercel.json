@@ -10,7 +10,7 @@
     },
     {
       "path": "/api/cron/send-reminders",
-      "schedule": "50 19 15 5 *"
+      "schedule": "50 17 18 5 *"
     }
   ]
 }
