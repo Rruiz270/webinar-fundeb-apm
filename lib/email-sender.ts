@@ -1,6 +1,7 @@
 import { prisma } from "./db";
 import { createTransporter, wrapEmailLayout } from "./email";
 import type { Reminder } from "./email-reminders";
+import { marcarReminderEnviado } from "./rdstation";
 
 const BATCH_SIZE = 5;
 const BATCH_DELAY_MS = 5000;
@@ -74,6 +75,7 @@ export async function sendReminderToAll(
           subject: reminder.subject,
           html: wrapEmailLayout(reminder.bodyHtml),
         });
+        marcarReminderEnviado(email, reminder.id).catch(() => {});
         totalSent++;
       } catch (err) {
         totalFailed++;
