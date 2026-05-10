@@ -24,10 +24,10 @@ export const SPEAKERS = [
 ];
 
 export const HERO = {
-  headline: "Seu Município Está Pronto para Captar os Recursos do FUNDEB 2026?",
+  headline: "Seu município está preparado para captar os recursos do FUNDEB 2026?",
   subheadline:
-    "O Censo Escolar fecha em 27 de maio. Cada dia sem ação é recurso perdido. Descubra como maximizar a captação do FUNDEB e cumprir as exigências da BNCC Computação.",
-  cta: "Quero Garantir Minha Vaga",
+    "O Censo Escolar fecha em 27 de maio — e cada dia sem ação pode significar perda de recursos para a educação municipal.",
+  cta: "Inscreva-se Gratuitamente",
 };
 
 export const URGENCY_ITEMS = [
@@ -54,39 +54,26 @@ export const URGENCY_ITEMS = [
   },
 ];
 
-export const TOPICS = [
+export const HIGHLIGHTS = [
   {
     icon: "fundeb" as const,
-    title: "FUNDEB & CENSO",
-    duration: "20 min",
-    items: [
-      "Como funciona a captação do FUNDEB 2026",
-      "As 15 categorias de matrícula e seus fatores",
-      "Prazo crítico: Censo Escolar 27 de maio",
-      "Erros comuns que fazem municípios perderem recursos",
-    ],
+    title: "Como maximizar a captação do FUNDEB",
+    description: "Estratégias comprovadas para identificar e captar todos os recursos disponíveis para seu município.",
   },
   {
     icon: "bncc" as const,
-    title: "BNCC COMPUTAÇÃO",
-    duration: "15 min",
-    items: [
-      "O que a Resolução CNE/CEB 1/2022 exige",
-      "Prazos de adequação para 2026",
-      "Como implementar sem infraestrutura cara",
-      "Impacto no VAAR e na captação de recursos",
-    ],
+    title: "Impactos da BNCC Computação no VAAR",
+    description: "Entenda como a implementação da BNCC Computação afeta diretamente o recebimento do VAAR.",
   },
   {
-    icon: "vaar" as const,
-    title: "PERGUNTAS & RESPOSTAS",
-    duration: "10 min",
-    items: [
-      "Tire suas dúvidas ao vivo com os palestrantes",
-      "Casos práticos do seu município",
-      "Próximos passos e plano de ação",
-      "Como acessar o sistema BNCC-CAPTAÇÃO",
-    ],
+    icon: "rede" as const,
+    title: "Estratégias para fortalecer a rede municipal",
+    description: "Ações práticas para melhorar a gestão e os resultados da educação no seu município.",
+  },
+  {
+    icon: "gestao" as const,
+    title: "Planejamento e gestão educacional eficiente",
+    description: "Como planejar e executar políticas educacionais que maximizam recursos e resultados.",
   },
 ];
 
