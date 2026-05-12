@@ -1,8 +1,8 @@
 import nodemailer from "nodemailer";
 
-export const MEET_LINK = "{{GOOGLE_MEET_LINK}}";
-export const MEET_PHONE = "+55 11 XXXX-XXXX";
-export const MEET_PIN = "XXX XXX XXX#";
+export const MEET_LINK = "https://meet.google.com/cgc-kpke-rqw";
+export const MEET_PHONE = "";
+export const MEET_PIN = "";
 
 export const CALENDAR_LINK =
   "https://calendar.google.com/calendar/render?" +
@@ -14,17 +14,23 @@ export const CALENDAR_LINK =
     location: `Google Meet — ${MEET_LINK}`,
   }).toString();
 
+export const SMTP_FROM = "apaulista@apaulista.org.br";
+export const SMTP_FROM_NAME = "APM — Associação Paulista de Municípios";
+
 export function createTransporter() {
-  const user = process.env.GMAIL_USER;
-  const pass = process.env.GMAIL_APP_PASSWORD;
+  const user = process.env.SMTP_USER;
+  const pass = process.env.SMTP_PASS;
 
   if (!user || !pass) {
     return null;
   }
 
   return nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.office365.com",
+    port: 587,
+    secure: false,
     auth: { user, pass },
+    tls: { ciphers: "SSLv3" },
   });
 }
 
@@ -158,7 +164,7 @@ export async function sendConfirmationEmail(to: string, nome: string) {
 
   try {
     await transporter.sendMail({
-      from: `APM + Instituto i10 <${user}>`,
+      from: `${SMTP_FROM_NAME} <${SMTP_FROM}>`,
       to,
       subject: "Inscrição Confirmada — Webinar FUNDEB 2026 | APM + Instituto i10",
       html: wrapEmailLayout(bodyHtml),

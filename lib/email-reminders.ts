@@ -234,7 +234,7 @@ export const REENGAGEMENT_TEMPLATES = [
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
         Você vai aprender sobre o prazo do Censo Escolar (27/05), as exigências da BNCC Computação, e como utilizar o sistema BNCC-CAPTAÇÃO.
       </p>
-      ${greenButton("Inscrever-me Gratuitamente", "{{LP_URL}}")}`,
+      ${greenButton("Inscrever-me Gratuitamente", "https://www.institutoi10.com.br/apm-fundeb")}`,
   },
   {
     id: "re2_dia_08",
@@ -253,7 +253,7 @@ export const REENGAGEMENT_TEMPLATES = [
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
         Nosso webinar gratuito no dia <strong>18 de Maio às 15h</strong> vai mostrar exatamente o que fazer. Inscreva-se agora — vagas limitadas.
       </p>
-      ${greenButton("Garantir Minha Vaga — Gratuito", "{{LP_URL}}")}`,
+      ${greenButton("Garantir Minha Vaga — Gratuito", "https://www.institutoi10.com.br/apm-fundeb")}`,
   },
   {
     id: "re3_dia_10",
@@ -274,7 +274,7 @@ export const REENGAGEMENT_TEMPLATES = [
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
         <strong>Gratuito. Online. Prático.</strong> Só precisa se inscrever.
       </p>
-      ${greenButton("Inscrever Agora — Últimas Vagas", "{{LP_URL}}")}`,
+      ${greenButton("Inscrever Agora — Últimas Vagas", "https://www.institutoi10.com.br/apm-fundeb")}`,
   },
   {
     id: "re4_dia_12",
@@ -293,7 +293,7 @@ export const REENGAGEMENT_TEMPLATES = [
           O webinar é gratuito e online. Inscreva-se e receba o link de acesso direto no seu e-mail.
         </p>
       </div>
-      ${greenButton("SIM, QUERO PARTICIPAR", "{{LP_URL}}")}`,
+      ${greenButton("SIM, QUERO PARTICIPAR", "https://www.institutoi10.com.br/apm-fundeb")}`,
   },
   {
     id: "re5_dia_14",
@@ -311,7 +311,7 @@ export const REENGAGEMENT_TEMPLATES = [
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
         <strong>Luciane Biancardi</strong> e <strong>Felipe Miguel</strong> vão compartilhar experiências reais e estratégias comprovadas.
       </p>
-      ${greenButton("INSCREVER AGORA — É GRÁTIS", "{{LP_URL}}")}`,
+      ${greenButton("INSCREVER AGORA — É GRÁTIS", "https://www.institutoi10.com.br/apm-fundeb")}`,
   },
 ];
 
