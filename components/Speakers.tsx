@@ -19,9 +19,15 @@ export default function Speakers() {
               key={s.name}
               className="flex flex-col items-center text-center bg-teal-dark/60 rounded-2xl p-8 border border-green/20"
             >
-              <div className="w-28 h-28 rounded-full bg-teal flex items-center justify-center ring-4 ring-green/40 shadow-[0_0_20px_rgba(0,229,160,0.3)] mb-4">
-                <span className="text-white text-2xl font-bold">{s.initials}</span>
-              </div>
+              {s.image ? (
+                <div className="w-28 h-28 rounded-full ring-4 ring-green/40 shadow-[0_0_20px_rgba(0,229,160,0.3)] mb-4 overflow-hidden">
+                  <img src={s.image} alt={s.name} className="w-full h-full object-cover" />
+                </div>
+              ) : (
+                <div className="w-28 h-28 rounded-full bg-teal flex items-center justify-center ring-4 ring-green/40 shadow-[0_0_20px_rgba(0,229,160,0.3)] mb-4">
+                  <span className="text-white text-2xl font-bold">{s.initials}</span>
+                </div>
+              )}
 
               <h3 className="text-lg font-bold text-white">{s.name}</h3>
               <p className="text-sm font-semibold text-green mb-3">{s.title}</p>

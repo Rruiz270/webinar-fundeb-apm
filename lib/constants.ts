@@ -12,13 +12,15 @@ export const SPEAKERS = [
   {
     name: "Luciane Biancardi",
     initials: "LB",
-    title: "Consultora de FUNDEB | Ex-Secretária de Educação",
+    image: "https://webinar-fundeb-apm.vercel.app/images/luciane-biancardi.jpeg",
+    title: "Consultora de FUNDEB e ex-Secretária de Educação",
     bio: "Especialista em captação de recursos do FUNDEB com ampla experiência como gestora pública. Ex-Secretária de Educação, Luciane domina os mecanismos de financiamento educacional e as estratégias para maximizar a captação municipal.",
   },
   {
     name: "Felipe Miguel",
     initials: "FM",
-    title: "Ex-Secretário de Educação de Ribeirão Preto",
+    image: "https://webinar-fundeb-apm.vercel.app/images/felipe-miguel.jpeg",
+    title: "APM Educação",
     bio: "Com experiência à frente da Secretaria de Educação de Ribeirão Preto, Felipe traz a visão prática de quem já implementou políticas de captação de recursos e adequação curricular em uma das maiores redes municipais de SP.",
   },
 ];
