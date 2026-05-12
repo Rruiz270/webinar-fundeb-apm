@@ -7,9 +7,9 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background-color: #F4F7FA;
-      color: #1A202C;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0a1a1c;
+      color: #ffffff;
       padding: 40px 20px;
     }
     .container {
@@ -17,7 +17,7 @@
       margin: 0 auto;
     }
     .header {
-      background-color: #0A5C5F;
+      background: linear-gradient(135deg, #062d2f 0%, #0a4a4d 50%, #0d6366 100%);
       padding: 32px;
       border-radius: 12px 12px 0 0;
       display: flex;
@@ -25,21 +25,25 @@
       justify-content: space-between;
     }
     .header img { height: 40px; }
-    .header span { color: #00E5A0; font-size: 16px; font-weight: bold; }
+    .header .i10-logo {
+      color: #00E5A0;
+    }
+    .header .i10-logo span:first-child { font-size: 14px; font-weight: 400; }
+    .header .i10-logo span:last-child { font-size: 28px; font-weight: 900; letter-spacing: -0.5px; }
     .content {
-      background-color: #ffffff;
+      background: linear-gradient(180deg, #0a4a4d 0%, #062d2f 100%);
       padding: 32px;
       border-radius: 0 0 12px 12px;
-      border: 1px solid #DDE3EB;
+      border: 1px solid rgba(0, 229, 160, 0.15);
       border-top: none;
     }
     h1 {
       font-size: 28px;
-      color: #1A202C;
+      color: #ffffff;
       margin-bottom: 8px;
     }
     .subtitle {
-      color: #718096;
+      color: rgba(255, 255, 255, 0.6);
       font-size: 15px;
       margin-bottom: 32px;
     }
@@ -57,25 +61,32 @@
       margin-bottom: 16px;
     }
     .flow-outreach .flow-title {
-      background-color: #0D7377;
+      background: linear-gradient(135deg, #0D7377, #11998E);
       color: #ffffff;
     }
     .flow-registered .flow-title {
       background-color: #00E5A0;
-      color: #0A5C5F;
+      color: #084547;
+    }
+    .flow-desc {
+      color: rgba(255, 255, 255, 0.55);
+      font-size: 14px;
+      margin-bottom: 16px;
     }
     .email-list {
       list-style: none;
     }
     .email-item {
-      border: 1px solid #DDE3EB;
+      border: 1px solid rgba(0, 229, 160, 0.15);
       border-radius: 8px;
       margin-bottom: 8px;
+      background: rgba(255, 255, 255, 0.04);
       transition: all 0.15s ease;
     }
     .email-item:hover {
-      border-color: #0D7377;
-      box-shadow: 0 2px 8px rgba(13, 115, 119, 0.1);
+      border-color: #00E5A0;
+      background: rgba(0, 229, 160, 0.08);
+      box-shadow: 0 2px 12px rgba(0, 229, 160, 0.1);
     }
     .email-item a {
       display: flex;
@@ -86,8 +97,8 @@
       gap: 16px;
     }
     .email-num {
-      background-color: #F4F7FA;
-      color: #0D7377;
+      background: rgba(0, 229, 160, 0.15);
+      color: #00E5A0;
       font-size: 13px;
       font-weight: bold;
       padding: 4px 10px;
@@ -100,16 +111,16 @@
     .email-name {
       font-weight: 600;
       font-size: 15px;
-      color: #1A202C;
+      color: #ffffff;
       margin-bottom: 2px;
     }
     .email-subject {
       font-size: 13px;
-      color: #718096;
+      color: rgba(255, 255, 255, 0.5);
     }
     .email-date {
       font-size: 12px;
-      color: #718096;
+      color: rgba(255, 255, 255, 0.4);
       white-space: nowrap;
     }
     .email-urgency {
@@ -119,15 +130,15 @@
       font-weight: bold;
       white-space: nowrap;
     }
-    .urgency-low { background-color: #F0FFF4; color: #0A5C5F; }
-    .urgency-medium { background-color: #FEFCBF; color: #975A16; }
-    .urgency-high { background-color: #FFF5F5; color: #D4553A; }
-    .urgency-max { background-color: #D4553A; color: #ffffff; }
+    .urgency-low { background: rgba(0, 229, 160, 0.15); color: #00E5A0; }
+    .urgency-medium { background: rgba(236, 201, 75, 0.2); color: #ECC94B; }
+    .urgency-high { background: rgba(229, 62, 62, 0.2); color: #FC8181; }
+    .urgency-max { background: #E53E3E; color: #ffffff; }
 
     .footer {
       text-align: center;
       margin-top: 24px;
-      color: #718096;
+      color: rgba(255, 255, 255, 0.35);
       font-size: 13px;
     }
 
@@ -141,7 +152,10 @@
   <div class="container">
     <div class="header">
       <img src="https://apm-fundeb-sp.vercel.app/fundeb-sp/apm-logo-pill-web.png" alt="APM">
-      <span>Instituto i10</span>
+      <div class="i10-logo">
+        <span>Instituto</span>
+        <span> i10</span>
+      </div>
     </div>
     <div class="content">
       <h1>Email Templates</h1>
@@ -149,39 +163,39 @@
 
       <!-- FLOW 1: OUTREACH -->
       <div class="flow-section flow-outreach">
-        <span class="flow-title">Flow 1: Outreach (nao inscritos)</span>
-        <p style="color:#4A5568;font-size:14px;margin-bottom:16px;">Enviados a cada ~2 dias com urgência crescente para quem ainda nao se inscreveu.</p>
+        <span class="flow-title">Flow 1: Outreach (n&atilde;o inscritos)</span>
+        <p class="flow-desc">Enviados a cada ~2 dias com urg&ecirc;ncia crescente para quem ainda n&atilde;o se inscreveu.</p>
         <ul class="email-list">
           <li class="email-item">
             <a href="00-convite-inicial.html">
               <span class="email-num">00</span>
               <div class="email-info">
                 <div class="email-name">Convite Inicial</div>
-                <div class="email-subject">Webinar Gratuito: Como captar recursos do FUNDEB para seu município | APM</div>
+                <div class="email-subject">Webinar Gratuito: Como captar recursos do FUNDEB para seu munic&iacute;pio | APM</div>
               </div>
               <span class="email-urgency urgency-low">Informativo</span>
               <span class="email-date">6/mai</span>
             </a>
           </li>
           <li class="email-item">
-            <a href="01-urgência-censo.html">
+            <a href="01-urgencia-censo.html">
               <span class="email-num">01</span>
               <div class="email-info">
-                <div class="email-name">Urgência Censo</div>
-                <div class="email-subject">URGENTE: Censo Escolar fecha dia 27 &mdash; Seu município esta preparado? | APM</div>
+                <div class="email-name">Urg&ecirc;ncia Censo</div>
+                <div class="email-subject">URGENTE: Censo Escolar fecha dia 27 &mdash; Seu munic&iacute;pio est&aacute; preparado? | APM</div>
               </div>
               <span class="email-urgency urgency-medium">Urgente</span>
               <span class="email-date">8/mai</span>
             </a>
           </li>
           <li class="email-item">
-            <a href="02-conteúdo-preview.html">
+            <a href="02-conteudo-preview.html">
               <span class="email-num">02</span>
               <div class="email-info">
-                <div class="email-name">Preview de Conteúdo</div>
-                <div class="email-subject">Faltam 8 dias: Veja o que você vai aprender no webinar FUNDEB | APM</div>
+                <div class="email-name">Preview de Conte&uacute;do</div>
+                <div class="email-subject">Faltam 8 dias: Veja o que voc&ecirc; vai aprender no webinar FUNDEB | APM</div>
               </div>
-              <span class="email-urgency urgency-low">Conteúdo</span>
+              <span class="email-urgency urgency-low">Conte&uacute;do</span>
               <span class="email-date">10/mai</span>
             </a>
           </li>
@@ -190,7 +204,7 @@
               <span class="email-num">03</span>
               <div class="email-info">
                 <div class="email-name">Dinheiro na Mesa</div>
-                <div class="email-subject">ESTA SEMANA: Seu município esta deixando dinheiro na mesa? | APM</div>
+                <div class="email-subject">ESTA SEMANA: Seu munic&iacute;pio est&aacute; deixando dinheiro na mesa? | APM</div>
               </div>
               <span class="email-urgency urgency-high">Alto Impacto</span>
               <span class="email-date">12/mai</span>
@@ -200,10 +214,10 @@
             <a href="04-ultima-chance.html">
               <span class="email-num">04</span>
               <div class="email-info">
-                <div class="email-name">Ultima Chance</div>
-                <div class="email-subject">AMANHA: Ultima chance de se inscrever &mdash; Webinar FUNDEB | APM</div>
+                <div class="email-name">&Uacute;ltima Chance</div>
+                <div class="email-subject">AMANH&Atilde;: &Uacute;ltima chance de se inscrever &mdash; Webinar FUNDEB | APM</div>
               </div>
-              <span class="email-urgency urgency-max">Maximo</span>
+              <span class="email-urgency urgency-max">M&aacute;ximo</span>
               <span class="email-date">17/mai</span>
             </a>
           </li>
@@ -212,15 +226,15 @@
 
       <!-- FLOW 2: REGISTERED -->
       <div class="flow-section flow-registered">
-        <span class="flow-title">Flow 2: Inscritos (apos registro)</span>
-        <p style="color:#4A5568;font-size:14px;margin-bottom:16px;">Confirmação automatica + lembretes com frequência crescente ate o dia do evento.</p>
+        <span class="flow-title">Flow 2: Inscritos (ap&oacute;s registro)</span>
+        <p class="flow-desc">Confirma&ccedil;&atilde;o autom&aacute;tica + lembretes com frequ&ecirc;ncia crescente at&eacute; o dia do evento.</p>
         <ul class="email-list">
           <li class="email-item">
-            <a href="10-confirmação.html">
+            <a href="10-confirmacao.html">
               <span class="email-num">10</span>
               <div class="email-info">
-                <div class="email-name">Confirmação de Inscrição</div>
-                <div class="email-subject">Inscrição Confirmada &mdash; Webinar FUNDEB 2026 | APM + Instituto i10</div>
+                <div class="email-name">Confirma&ccedil;&atilde;o de Inscri&ccedil;&atilde;o</div>
+                <div class="email-subject">Inscri&ccedil;&atilde;o Confirmada &mdash; Webinar FUNDEB 2026 | APM + Instituto i10</div>
               </div>
               <span class="email-urgency urgency-low">Auto</span>
               <span class="email-date">Imediato</span>
@@ -231,21 +245,21 @@
               <span class="email-num">11</span>
               <div class="email-info">
                 <div class="email-name">1 Semana Antes</div>
-                <div class="email-subject">O webinar FUNDEB e na proxima semana! | APM + i10</div>
+                <div class="email-subject">O webinar FUNDEB &eacute; na pr&oacute;xima semana! | APM + i10</div>
               </div>
               <span class="email-urgency urgency-low">Lembrete</span>
-              <span class="email-date">7/mai 09h</span>
+              <span class="email-date">11/mai 09h</span>
             </a>
           </li>
           <li class="email-item">
-            <a href="12-preview-conteúdo.html">
+            <a href="12-preview-conteudo.html">
               <span class="email-num">12</span>
               <div class="email-info">
-                <div class="email-name">Preview de Conteúdo</div>
-                <div class="email-subject">O que você vai aprender no webinar FUNDEB | APM + i10</div>
+                <div class="email-name">Pr&eacute;via de Conte&uacute;do</div>
+                <div class="email-subject">O que voc&ecirc; vai aprender no webinar FUNDEB | APM + i10</div>
               </div>
-              <span class="email-urgency urgency-low">Conteúdo</span>
-              <span class="email-date">9/mai 10h</span>
+              <span class="email-urgency urgency-low">Conte&uacute;do</span>
+              <span class="email-date">12/mai 10h</span>
             </a>
           </li>
           <li class="email-item">
@@ -253,7 +267,7 @@
               <span class="email-num">13</span>
               <div class="email-info">
                 <div class="email-name">Esta Semana</div>
-                <div class="email-subject">E ESTA SEMANA &mdash; Webinar FUNDEB segunda as 15h | APM + i10</div>
+                <div class="email-subject">&Eacute; ESTA SEMANA &mdash; Webinar FUNDEB segunda &agrave;s 15h | APM + i10</div>
               </div>
               <span class="email-urgency urgency-medium">Urgente</span>
               <span class="email-date">14/mai 09h</span>
@@ -263,8 +277,8 @@
             <a href="14-vespera.html">
               <span class="email-num">14</span>
               <div class="email-info">
-                <div class="email-name">Vespera</div>
-                <div class="email-subject">AMANHA as 15h &mdash; Webinar FUNDEB 2026 | APM + i10</div>
+                <div class="email-name">V&eacute;spera</div>
+                <div class="email-subject">AMANH&Atilde; &agrave;s 15h &mdash; Webinar FUNDEB 2026 | APM + i10</div>
               </div>
               <span class="email-urgency urgency-high">Alto</span>
               <span class="email-date">17/mai 10h</span>
@@ -275,7 +289,7 @@
               <span class="email-num">15</span>
               <div class="email-info">
                 <div class="email-name">Dia do Evento</div>
-                <div class="email-subject">HOJE as 15h &mdash; Webinar FUNDEB 2026 | APM + i10</div>
+                <div class="email-subject">HOJE &agrave;s 15h &mdash; Webinar FUNDEB 2026 | APM + i10</div>
               </div>
               <span class="email-urgency urgency-high">Alto</span>
               <span class="email-date">18/mai 09h</span>
@@ -286,9 +300,9 @@
               <span class="email-num">16</span>
               <div class="email-info">
                 <div class="email-name">10 Minutos!</div>
-                <div class="email-subject">COMECA EM 10 MINUTOS &mdash; Entre agora! | APM + i10</div>
+                <div class="email-subject">COME&Ccedil;A EM 10 MINUTOS &mdash; Entre agora! | APM + i10</div>
               </div>
-              <span class="email-urgency urgency-max">Maximo</span>
+              <span class="email-urgency urgency-max">M&aacute;ximo</span>
               <span class="email-date">18/mai 14:50</span>
             </a>
           </li>
