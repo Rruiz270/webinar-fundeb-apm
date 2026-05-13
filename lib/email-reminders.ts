@@ -44,11 +44,11 @@ const urgencyBanner = `
 // FLUXO 1: REMINDERS PARA INSCRITOS
 // ============================================================
 export const REMINDERS: Reminder[] = [
-  // #1 — Qua 07/Mai 09:00 BRT
+  // #1 — Qua 13/Mai 09:00 BRT
   {
     id: "r1_confirmacao_reforco",
     subject: "Webinar FUNDEB é na próxima semana! | APM + i10",
-    date: "2026-05-07",
+    date: "2026-05-13",
     time: "09:00",
     bodyHtml: `
       <h2 style="color:#0A5C5F;font-size:22px;margin:0 0 8px;">O webinar é na próxima semana!</h2>
@@ -66,11 +66,11 @@ export const REMINDERS: Reminder[] = [
       </p>`,
   },
 
-  // #2 — Sex 09/Mai 10:00 BRT
+  // #2 — Qui 14/Mai 10:00 BRT
   {
     id: "r2_conteudo_preview",
     subject: "O que você vai aprender no webinar FUNDEB | APM + i10",
-    date: "2026-05-09",
+    date: "2026-05-14",
     time: "10:00",
     bodyHtml: `
       <h2 style="color:#0A5C5F;font-size:22px;margin:0 0 8px;">Preview: o que você vai aprender</h2>
@@ -109,11 +109,11 @@ export const REMINDERS: Reminder[] = [
       ${greenButton("Confirmar Presença", CALENDAR_LINK)}`,
   },
 
-  // #3 — Seg 12/Mai 09:00 BRT
+  // #3 — Sex 15/Mai 09:00 BRT
   {
     id: "r3_semana_do_evento",
     subject: "É ESTA SEMANA — Webinar FUNDEB segunda às 15h | APM + i10",
-    date: "2026-05-14",
+    date: "2026-05-15",
     time: "09:00",
     bodyHtml: `
       <h2 style="color:#0A5C5F;font-size:22px;margin:0 0 8px;">É esta semana!</h2>
