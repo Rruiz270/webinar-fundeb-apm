@@ -1,8 +1,6 @@
-import nodemailer from "nodemailer";
+import { sendEmail as graphSendEmail } from "./msgraph";
 
 export const MEET_LINK = "https://meet.google.com/cgc-kpke-rqw";
-export const MEET_PHONE = "";
-export const MEET_PIN = "";
 
 export const CALENDAR_LINK =
   "https://calendar.google.com/calendar/render?" +
@@ -13,26 +11,6 @@ export const CALENDAR_LINK =
     details: `Webinar gratuito: Como captar recursos do FUNDEB para educação do seu município.\n\nPalestrantes: Luciane Biancardi e Felipe Miguel\n\nLink do Google Meet: ${MEET_LINK}`,
     location: `Google Meet — ${MEET_LINK}`,
   }).toString();
-
-export const SMTP_FROM = "apaulista@apaulista.org.br";
-export const SMTP_FROM_NAME = "APM — Associação Paulista de Municípios";
-
-export function createTransporter() {
-  const user = process.env.SMTP_USER;
-  const pass = process.env.SMTP_PASS;
-
-  if (!user || !pass) {
-    return null;
-  }
-
-  return nodemailer.createTransport({
-    host: "smtp.office365.com",
-    port: 587,
-    secure: false,
-    auth: { user, pass },
-    tls: { ciphers: "SSLv3" },
-  });
-}
 
 export function wrapEmailLayout(bodyHtml: string): string {
   return `
@@ -76,13 +54,6 @@ export function wrapEmailLayout(bodyHtml: string): string {
 }
 
 export async function sendConfirmationEmail(to: string, nome: string) {
-  const transporter = createTransporter();
-  const user = process.env.GMAIL_USER;
-
-  if (!transporter || !user) {
-    console.warn("GMAIL_USER or GMAIL_APP_PASSWORD not set — skipping email");
-    return { success: false, error: "Email service not configured" };
-  }
 
   const bodyHtml = `
       <h2 style="color:#0A5C5F;font-size:22px;margin:0 0 8px;">Inscrição confirmada!</h2>
@@ -162,17 +133,9 @@ export async function sendConfirmationEmail(to: string, nome: string) {
         Guarde este e-mail — enviaremos o link do Google Meet antes do evento. Recomendamos entrar 5 minutos antes do início.
       </p>`;
 
-  try {
-    await transporter.sendMail({
-      from: `${SMTP_FROM_NAME} <${SMTP_FROM}>`,
-      to,
-      subject: "Inscrição Confirmada — Webinar FUNDEB 2026 | APM + Instituto i10",
-      html: wrapEmailLayout(bodyHtml),
-    });
-
-    return { success: true };
-  } catch (err) {
-    console.error("Email send error:", err);
-    return { success: false, error: "Falha ao enviar e-mail de confirmação" };
-  }
+  return graphSendEmail(
+    to,
+    "Inscrição Confirmada — Webinar FUNDEB 2026 | APM + Instituto i10",
+    wrapEmailLayout(bodyHtml)
+  );
 }

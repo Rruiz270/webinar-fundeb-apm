@@ -1,11 +1,12 @@
 import { prisma } from "./db";
-import { createTransporter, wrapEmailLayout } from "./email";
+import { wrapEmailLayout } from "./email";
+import { sendEmail } from "./msgraph";
 import type { Reminder } from "./email-reminders";
 import { marcarReminderEnviado } from "./rdstation";
 
 const BATCH_SIZE = 5;
-const BATCH_DELAY_MS = 5000;
-const PER_EMAIL_DELAY_MS = 1000;
+const BATCH_DELAY_MS = 3000;
+const PER_EMAIL_DELAY_MS = 500;
 
 function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -36,13 +37,6 @@ export async function sendReminderToAll(
     }
   }
 
-  const transporter = createTransporter();
-  const user = process.env.GMAIL_USER;
-
-  if (!transporter || !user) {
-    throw new Error("GMAIL_USER or GMAIL_APP_PASSWORD not configured");
-  }
-
   const subscribers = await prisma.inscricao.findMany({
     select: { email: true, nome: true },
     orderBy: { createdAt: "asc" },
@@ -69,14 +63,18 @@ export async function sendReminderToAll(
 
     for (const { email } of batch) {
       try {
-        await transporter.sendMail({
-          from: `APM + Instituto i10 <${user}>`,
-          to: email,
-          subject: reminder.subject,
-          html: wrapEmailLayout(reminder.bodyHtml),
-        });
-        marcarReminderEnviado(email, reminder.id).catch(() => {});
-        totalSent++;
+        const result = await sendEmail(
+          email,
+          reminder.subject,
+          wrapEmailLayout(reminder.bodyHtml)
+        );
+        if (result.success) {
+          marcarReminderEnviado(email, reminder.id).catch(() => {});
+          totalSent++;
+        } else {
+          totalFailed++;
+          console.error("Failed to send to", email, result.error);
+        }
       } catch (err) {
         totalFailed++;
         console.error("Failed to send:", err);
