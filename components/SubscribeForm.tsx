@@ -116,7 +116,7 @@ export default function SubscribeForm() {
         </span>
       </div>
       <p className="text-sm text-text-gray mb-6">
-        18 de Maio às 15h | Google Meet | APM + Instituto i10
+        25 de Maio às 15h | Google Meet | APM + Instituto i10
       </p>
 
       {errorMsg && (

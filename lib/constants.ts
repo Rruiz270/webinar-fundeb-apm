@@ -1,6 +1,6 @@
 export const SITE = {
   name: "APM + Instituto i10",
-  webinarDate: "18 de Maio, 2026",
+  webinarDate: "25 de Maio, 2026",
   webinarTime: "15:00",
   webinarDuration: "1 hora",
   format: "Google Meet (ao vivo)",

@@ -7,7 +7,7 @@ export const CALENDAR_LINK =
   new URLSearchParams({
     action: "TEMPLATE",
     text: "Webinar FUNDEB 2026 — APM + Instituto i10",
-    dates: "20260518T180000Z/20260518T190000Z",
+    dates: "20260525T180000Z/20260525T190000Z",
     details: `Webinar gratuito: Como captar recursos do FUNDEB para educação do seu município.\n\nPalestrantes: Luciane Biancardi e Felipe Miguel\n\nLink do Google Meet: ${MEET_LINK}`,
     location: `Google Meet — ${MEET_LINK}`,
   }).toString();
@@ -66,7 +66,7 @@ export async function sendConfirmationEmail(to: string, nome: string) {
         <table style="width:100%;border-collapse:collapse;">
           <tr>
             <td style="padding:6px 0;color:#718096;font-size:12px;text-transform:uppercase;letter-spacing:1px;width:110px;">Data</td>
-            <td style="padding:6px 0;color:#1A202C;font-size:14px;font-weight:600;">Segunda-feira, 18 de Maio de 2026</td>
+            <td style="padding:6px 0;color:#1A202C;font-size:14px;font-weight:600;">Domingo, 25 de Maio de 2026</td>
           </tr>
           <tr>
             <td style="padding:6px 0;color:#718096;font-size:12px;text-transform:uppercase;letter-spacing:1px;">Horário</td>

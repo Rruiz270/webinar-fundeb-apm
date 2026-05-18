@@ -20,7 +20,7 @@ const eventCard = `
     <table style="width:100%;border-collapse:collapse;">
       <tr>
         <td style="padding:6px 0;color:#718096;font-size:12px;text-transform:uppercase;letter-spacing:1px;width:100px;">Data</td>
-        <td style="padding:6px 0;color:#1A202C;font-size:14px;font-weight:600;">Segunda-feira, 18 de Maio de 2026</td>
+        <td style="padding:6px 0;color:#1A202C;font-size:14px;font-weight:600;">Domingo, 25 de Maio de 2026</td>
       </tr>
       <tr>
         <td style="padding:6px 0;color:#718096;font-size:12px;text-transform:uppercase;letter-spacing:1px;">Horário</td>
@@ -48,7 +48,7 @@ export const REMINDERS: Reminder[] = [
   {
     id: "r1_confirmacao_reforco",
     subject: "Webinar FUNDEB é na próxima semana! | APM + i10",
-    date: "2026-05-13",
+    date: "2026-05-19",
     time: "09:00",
     bodyHtml: `
       <h2 style="color:#0A5C5F;font-size:22px;margin:0 0 8px;">O webinar é na próxima semana!</h2>
@@ -70,7 +70,7 @@ export const REMINDERS: Reminder[] = [
   {
     id: "r2_conteudo_preview",
     subject: "O que você vai aprender no webinar FUNDEB | APM + i10",
-    date: "2026-05-14",
+    date: "2026-05-21",
     time: "10:00",
     bodyHtml: `
       <h2 style="color:#0A5C5F;font-size:22px;margin:0 0 8px;">Preview: o que você vai aprender</h2>
@@ -112,8 +112,8 @@ export const REMINDERS: Reminder[] = [
   // #3 — Sex 15/Mai 09:00 BRT
   {
     id: "r3_semana_do_evento",
-    subject: "É ESTA SEMANA — Webinar FUNDEB segunda às 15h | APM + i10",
-    date: "2026-05-15",
+    subject: "É ESTA SEMANA — Webinar FUNDEB domingo às 15h | APM + i10",
+    date: "2026-05-22",
     time: "09:00",
     bodyHtml: `
       <h2 style="color:#0A5C5F;font-size:22px;margin:0 0 8px;">É esta semana!</h2>
@@ -137,12 +137,12 @@ export const REMINDERS: Reminder[] = [
   {
     id: "r4_vespera",
     subject: "AMANHÃ às 15h — Webinar FUNDEB 2026 | APM + i10",
-    date: "2026-05-17",
+    date: "2026-05-24",
     time: "10:00",
     bodyHtml: `
       <h2 style="color:#0A5C5F;font-size:22px;margin:0 0 8px;">É amanhã!</h2>
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
-        <strong>Amanhã, segunda-feira 18 de Maio às 15h</strong>, começa o webinar FUNDEB 2026 com Luciane Biancardi e Felipe Miguel.
+        <strong>Amanhã, domingo 25 de Maio às 15h</strong>, começa o webinar FUNDEB 2026 com Luciane Biancardi e Felipe Miguel.
       </p>
       <div style="background:#EFF6FF;border:1px solid #3B82F640;border-radius:8px;padding:16px;margin:16px 0;">
         <p style="color:#1E40AF;font-size:14px;margin:0;">
@@ -160,7 +160,7 @@ export const REMINDERS: Reminder[] = [
   {
     id: "r5_dia_do_evento",
     subject: "HOJE às 15h — Webinar FUNDEB 2026 | APM + i10",
-    date: "2026-05-18",
+    date: "2026-05-25",
     time: "09:00",
     bodyHtml: `
       <h2 style="color:#0A5C5F;font-size:22px;margin:0 0 12px;">
@@ -188,7 +188,7 @@ export const REMINDERS: Reminder[] = [
   {
     id: "r6_dez_minutos",
     subject: "COMEÇA EM 10 MINUTOS — Entre agora! | APM + i10",
-    date: "2026-05-18",
+    date: "2026-05-25",
     time: "14:50",
     bodyHtml: `
       <div style="text-align:center;">
@@ -225,7 +225,7 @@ export const REENGAGEMENT_TEMPLATES = [
     bodyHtml: `
       <h2 style="color:#0A5C5F;font-size:22px;margin:0 0 8px;">Secretário(a), você já garantiu sua vaga?</h2>
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
-        No dia <strong>18 de Maio às 15h</strong>, a APM e o Instituto i10 realizam um webinar gratuito sobre <strong>como captar recursos do FUNDEB</strong> para a educação do seu município.
+        No dia <strong>25 de Maio às 15h</strong>, a APM e o Instituto i10 realizam um webinar gratuito sobre <strong>como captar recursos do FUNDEB</strong> para a educação do seu município.
       </p>
       ${urgencyBanner}
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
@@ -251,7 +251,7 @@ export const REENGAGEMENT_TEMPLATES = [
         </p>
       </div>
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
-        Nosso webinar gratuito no dia <strong>18 de Maio às 15h</strong> vai mostrar exatamente o que fazer. Inscreva-se agora — vagas limitadas.
+        Nosso webinar gratuito no dia <strong>25 de Maio às 15h</strong> vai mostrar exatamente o que fazer. Inscreva-se agora — vagas limitadas.
       </p>
       ${greenButton("Garantir Minha Vaga — Gratuito", "https://www.institutoi10.com.br/apm-fundeb")}`,
   },
@@ -262,7 +262,7 @@ export const REENGAGEMENT_TEMPLATES = [
     bodyHtml: `
       <h2 style="color:#0A5C5F;font-size:22px;margin:0 0 8px;">Última chamada para esta semana</h2>
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
-        Na <strong>próxima segunda-feira (18/05)</strong>, especialistas em captação de recursos vão revelar:
+        Na <strong>próximo domingo (25/05)</strong>, especialistas em captação de recursos vão revelar:
       </p>
       <ul style="color:#4A5568;font-size:14px;line-height:1.8;margin:0 0 16px;padding-left:20px;">
         <li>Como identificar <strong>6 alavancas de captação</strong> do FUNDEB</li>
