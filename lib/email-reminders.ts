@@ -20,7 +20,7 @@ const eventCard = `
     <table style="width:100%;border-collapse:collapse;">
       <tr>
         <td style="padding:6px 0;color:#718096;font-size:12px;text-transform:uppercase;letter-spacing:1px;width:100px;">Data</td>
-        <td style="padding:6px 0;color:#1A202C;font-size:14px;font-weight:600;">Domingo, 25 de Maio de 2026</td>
+        <td style="padding:6px 0;color:#1A202C;font-size:14px;font-weight:600;">Segunda-feira, 25 de Maio de 2026</td>
       </tr>
       <tr>
         <td style="padding:6px 0;color:#718096;font-size:12px;text-transform:uppercase;letter-spacing:1px;">Horário</td>
@@ -49,7 +49,7 @@ export const REMINDERS: Reminder[] = [
     id: "r1_confirmacao_reforco",
     subject: "Webinar FUNDEB é na próxima semana! | APM + i10",
     date: "2026-05-19",
-    time: "09:00",
+    time: "15:00",
     bodyHtml: `
       <h2 style="color:#0A5C5F;font-size:22px;margin:0 0 8px;">O webinar é na próxima semana!</h2>
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
@@ -112,7 +112,7 @@ export const REMINDERS: Reminder[] = [
   // #3 — Sex 15/Mai 09:00 BRT
   {
     id: "r3_semana_do_evento",
-    subject: "É ESTA SEMANA — Webinar FUNDEB domingo às 15h | APM + i10",
+    subject: "É ESTA SEMANA — Webinar FUNDEB segunda às 15h | APM + i10",
     date: "2026-05-22",
     time: "09:00",
     bodyHtml: `
@@ -142,7 +142,7 @@ export const REMINDERS: Reminder[] = [
     bodyHtml: `
       <h2 style="color:#0A5C5F;font-size:22px;margin:0 0 8px;">É amanhã!</h2>
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
-        <strong>Amanhã, domingo 25 de Maio às 15h</strong>, começa o webinar FUNDEB 2026 com Luciane Biancardi e Felipe Miguel.
+        <strong>Amanhã, segunda-feira 25 de Maio às 15h</strong>, começa o webinar FUNDEB 2026 com Luciane Biancardi e Felipe Miguel.
       </p>
       <div style="background:#EFF6FF;border:1px solid #3B82F640;border-radius:8px;padding:16px;margin:16px 0;">
         <p style="color:#1E40AF;font-size:14px;margin:0;">
@@ -262,7 +262,7 @@ export const REENGAGEMENT_TEMPLATES = [
     bodyHtml: `
       <h2 style="color:#0A5C5F;font-size:22px;margin:0 0 8px;">Última chamada para esta semana</h2>
       <p style="color:#4A5568;font-size:15px;line-height:1.6;margin:0 0 16px;">
-        Na <strong>próximo domingo (25/05)</strong>, especialistas em captação de recursos vão revelar:
+        Na <strong>próxima segunda-feira (25/05)</strong>, especialistas em captação de recursos vão revelar:
       </p>
       <ul style="color:#4A5568;font-size:14px;line-height:1.8;margin:0 0 16px;padding-left:20px;">
         <li>Como identificar <strong>6 alavancas de captação</strong> do FUNDEB</li>

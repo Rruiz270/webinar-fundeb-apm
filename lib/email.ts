@@ -66,7 +66,7 @@ export async function sendConfirmationEmail(to: string, nome: string) {
         <table style="width:100%;border-collapse:collapse;">
           <tr>
             <td style="padding:6px 0;color:#718096;font-size:12px;text-transform:uppercase;letter-spacing:1px;width:110px;">Data</td>
-            <td style="padding:6px 0;color:#1A202C;font-size:14px;font-weight:600;">Domingo, 25 de Maio de 2026</td>
+            <td style="padding:6px 0;color:#1A202C;font-size:14px;font-weight:600;">Segunda-feira, 25 de Maio de 2026</td>
           </tr>
           <tr>
             <td style="padding:6px 0;color:#718096;font-size:12px;text-transform:uppercase;letter-spacing:1px;">Horário</td>
