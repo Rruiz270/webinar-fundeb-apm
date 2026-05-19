@@ -1,6 +1,6 @@
 import { sendEmail as graphSendEmail } from "./msgraph";
 
-export const MEET_LINK = "https://meet.google.com/cgc-kpke-rqw";
+export const MEET_LINK = "https://meet.google.com/dtd-yump-bsv";
 
 export const CALENDAR_LINK =
   "https://calendar.google.com/calendar/render?" +
