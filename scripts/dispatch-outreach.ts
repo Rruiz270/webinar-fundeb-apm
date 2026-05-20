@@ -75,7 +75,7 @@ const SCHEDULE: Record<string, { emailFile: string; subject: string }> = {
   },
   "04": {
     emailFile: "04-ultima-chance.html",
-    subject: "SEGUNDA: Última chance de se inscrever — Webinar FUNDEB | APM",
+    subject: "Última chance de se inscrever — Webinar FUNDEB segunda | APM",
   },
 };
 
@@ -115,7 +115,13 @@ async function main() {
     console.log("⚠️  Não conseguiu buscar inscritos do DB, enviando para todos");
   }
 
-  const outreachList = contacts.filter((c) => !inscritos.has(c.email));
+  let outreachList = contacts.filter((c) => !inscritos.has(c.email));
+
+  const testEmail = process.env.TEST_EMAIL?.trim();
+  if (testEmail) {
+    outreachList = [{ email: testEmail.toLowerCase(), name: "" }];
+    console.log(`\n🧪 MODO TESTE: enviando somente para ${testEmail}`);
+  }
 
   console.log(`\n📧 Disparando email ${emailId}: "${subject}"`);
   console.log(`📋 Lista total: ${contacts.length} | Já inscritos: ${inscritos.size} | Outreach: ${outreachList.length}\n`);
